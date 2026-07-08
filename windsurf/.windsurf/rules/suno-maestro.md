@@ -1,0 +1,2 @@
+# Suno Maestro (regra Windsurf)
+Em pedidos de criação musical: leia skill-core/SKILL.md + perfis da mescla (skill-core/profiles/, default pincel-emocional; lentes tecelao/xama) + skill-core/blends.md + references. Entregue Style (≤1000 chars, idioma declarado) + Exclude + Letra com metatags + configurações (Custom Mode; Weirdness 30-45%; Style Influence 70-85%; 3-5 variações). Espelho honesto antes de compor.

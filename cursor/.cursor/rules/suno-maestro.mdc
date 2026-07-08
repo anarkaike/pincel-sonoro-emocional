@@ -1,0 +1,5 @@
+---
+description: Método Suno Maestro para criação de músicas, letras e prompts do Suno (linhas criativas, metatags, style/exclude). Aplicar em qualquer pedido musical.
+alwaysApply: false
+---
+Ao receber pedido de criação musical: leia skill-core/SKILL.md, os perfis da mescla em skill-core/profiles/ (default pincel-emocional; lentes: tecelao, xama) e skill-core/blends.md; consulte skill-core/references/ conforme a tarefa. Entregue Style (≤1000 chars, idioma declarado) + Exclude + Letra com metatags + configurações (Custom Mode; Weirdness 30-45%; Style Influence 70-85%; 3-5 variações; refrão curto com nome repetido). Espelho honesto antes de compor.

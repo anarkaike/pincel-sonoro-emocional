@@ -1,0 +1,24 @@
+# Suno Maestro — Pacote multiplataforma
+
+**Arquitetura: um núcleo, muitos tradutores.** `skill-core/` é a fonte canônica (método completo: 9 linhas criativas, mesclas, referências). Cada pasta de provedor contém apenas o adaptador no dialeto daquela plataforma + COMO-INSTALAR.
+
+| Provedor | Mecanismo | Pasta |
+|---|---|---|
+| Claude / Claude Code | Skill (.skill / pasta) | `claude/` |
+| ChatGPT | Custom GPT ou Projeto (instruções + knowledge) | `openai/custom-gpt/` |
+| OpenAI Codex CLI | AGENTS.md no repo | `openai/codex-cli/` |
+| Gemini (app) | Gem (instruções + conhecimento) | `gemini/gem/` |
+| Gemini CLI | GEMINI.md no repo | `gemini/gemini-cli/` |
+| GitHub Copilot | .github/copilot-instructions.md | `github-copilot/` |
+| Cursor | .cursor/rules/*.mdc | `cursor/` |
+| Windsurf | .windsurf/rules/ | `windsurf/` |
+| Trae | .trae/rules/project_rules.md | `trae/` |
+| Devin | Knowledge ou AGENTS.md | `devin/` |
+| Qualquer outro agente | AGENTS.md universal | `universal/` |
+
+Regra dos adaptadores de repositório: sempre copie TAMBÉM a pasta `skill-core/` para a raiz do projeto — os adaptadores apontam para ela.
+Nota honesta: a experiência completa (subagentes, comandos, memória do Suno Studio) é exclusiva do Claude Code; nas demais plataformas a skill opera como método + base de conhecimento.
+Manutenção: edite apenas `skill-core/`; os adaptadores raramente mudam.
+
+## Contexto para agentes (leitura recomendada antes de operar)
+Todo o PORQUÊ do projeto vive em `skill-core/docs/`: **HISTORIA.md** (a jornada que gerou o método — do tarô às lentes), **NEGOCIO.md** (Servinder Artes: missão, modelo, estratégia, princípios), **GLOSSARIO.md** (vocabulário próprio), **ARQUITETURA.md** (decisões de design em mini-ADRs) e **PRIVACIDADE.md** (o que deliberadamente não está aqui e as regras ao lidar com dados de pessoas). Agentes que forem propor mudanças devem ler ARQUITETURA.md primeiro; agentes que forem compor devem honrar PRIVACIDADE.md sempre.

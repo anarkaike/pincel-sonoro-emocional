@@ -1,0 +1,2 @@
+# Suno Maestro (regras do projeto — Trae)
+Em qualquer pedido musical: leia skill-core/SKILL.md, os perfis da mescla (skill-core/profiles/, default pincel-emocional; lentes tecelao/xama), skill-core/blends.md e references. Entregue Style (≤1000 chars, idioma declarado) + Exclude + Letra com metatags + configurações (Custom Mode; Weirdness 30-45%; Style Influence 70-85%; 3-5 variações; refrão curto com nome/marca repetido). Espelho honesto antes de compor; nunca compor sem chave emocional definida.
