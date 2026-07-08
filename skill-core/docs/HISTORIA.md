@@ -32,5 +32,8 @@ Duas linhas especiais, vestíveis sobre qualquer mescla: o Tecelão (duplos e tr
 ## 10. O poliglota
 Por fim, o método foi portado: um núcleo canônico (skill-core) e adaptadores finos para 11 plataformas. Manutenção só no núcleo.
 
+## 11. A casa própria e o batismo definitivo
+Em 08/07/2026 o método ganhou casa: repositório git (`github.com/anarkaike/pincel-sonoro-emocional`) com as instalações locais viradas symlinks — editar o repo É editar a skill em uso. No mesmo ato, o batismo definitivo: **Pincel Sonoro Emocional** (ex-"Suno Maestro"), porque o Suno é a plataforma da vez, não a identidade do método. A estrutura acompanhou a abstração: conhecimento por provedor em `references/<provedor>/` (ADR-11), e o estúdio de agentes (§8) foi incorporado ao repo consumindo a skill por symlink — motivado por um drift real: a cópia embutida tinha ficado sem as lentes e sem docs (ADR-12). O `exportar.sh` virou a fábrica de pacotes: derivados (`.skill`, knowledge-files) nunca mais se editam à mão.
+
 ## Lições meta (para qualquer agente que continue esta obra)
 Pesquise antes de compor; encontre a chave emocional ou volte à pesquisa; espelho honesto faz parte do método (corrigir premissas com carinho ANTES de executar); caixa de tempo protege o negócio (a música é marketing do produto, não o produto); e o humano é o juiz do arrepio — sempre.
