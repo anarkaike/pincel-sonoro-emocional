@@ -1,9 +1,9 @@
 ---
-name: suno-maestro
-description: Sistema modular de linhas criativas para gerar músicas de altíssima qualidade no Suno (v5.5+). Use SEMPRE que o usuário pedir para criar, compor, adaptar ou melhorar música, jingle, hino, trilha, música terapêutica, convite musical, álbum ou letra para IA de música — mesmo sem citar "Suno". Também para revisar prompts ruins (pronúncia, corte, refrão robótico), organizar linhas criativas, mesclar perfis criativos ou criar novas linhas.
+name: pincel-sonoro-emocional
+description: Sistema modular de linhas criativas para gerar músicas de altíssima qualidade com IA (plataforma atual - Suno v5.5+). Use SEMPRE que o usuário pedir para criar, compor, adaptar ou melhorar música, jingle, hino, trilha, música terapêutica, convite musical, álbum ou letra para IA de música — mesmo sem citar plataforma. Também para revisar prompts ruins (pronúncia, corte, refrão robótico), organizar linhas criativas, mesclar perfis criativos ou criar novas linhas.
 ---
 
-# Suno Maestro v2 — Linhas Criativas
+# Pincel Sonoro Emocional v2 — Linhas Criativas
 
 Música aqui não nasce de prompt: nasce de uma **linha criativa** — uma filosofia de trabalho com domínios próprios. Este sistema é modular e extensível: linhas podem ser usadas puras, **mescladas (2-3 por vez)** ou criadas do zero.
 

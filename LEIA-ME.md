@@ -1,4 +1,4 @@
-# Suno Maestro — Pacote multiplataforma
+# Pincel Sonoro Emocional — Pacote multiplataforma
 
 **Arquitetura: um núcleo, muitos tradutores.** `skill-core/` é a fonte canônica (método completo: 9 linhas criativas, mesclas, referências). Cada pasta de provedor contém apenas o adaptador no dialeto daquela plataforma + COMO-INSTALAR.
 
@@ -22,8 +22,8 @@ Manutenção: edite apenas `skill-core/`; os adaptadores raramente mudam.
 
 ## Instalação viva neste Mac (symlinks — editar aqui = skill em uso atualizada)
 Este repo é a fonte da verdade; as instalações locais são symlinks para `skill-core/`:
-- App Claude (agent mode): `~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/92ba84f0-…/bf594650-…/skills/suno-maestro`
-- Claude Code CLI: `~/.claude/skills/suno-maestro`
+- App Claude (agent mode): `~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/92ba84f0-…/bf594650-…/skills/pincel-sonoro-emocional`
+- Claude Code CLI: `~/.claude/skills/pincel-sonoro-emocional`
 
 Se o app Claude recriar o diretório numa atualização (quebrando o symlink), basta refazê-lo
 apontando para `skill-core/` — todo o conteúdo vive neste repo git.

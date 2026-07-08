@@ -1,2 +1,2 @@
-# Suno Maestro (Gemini CLI)
+# Pincel Sonoro Emocional (Gemini CLI)
 Método completo em `skill-core/`. Em qualquer pedido musical: leia `skill-core/SKILL.md` → perfis da mescla em `skill-core/profiles/` (default pincel-emocional) e `skill-core/blends.md` → references conforme a tarefa. Entregue Style (≤1000 chars, idioma declarado) + Exclude + Letra com metatags + configurações (Custom Mode; Weirdness 30-45%; Style Influence 70-85%; 3-5 variações). Lentes vestíveis: tecelao (camadas de sentido) e xama (despertar; ética: pergunta plantada, nunca comando oculto). Espelho honesto antes de compor.

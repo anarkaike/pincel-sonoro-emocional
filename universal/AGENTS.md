@@ -1,4 +1,4 @@
-# Suno Maestro — instruções universais (qualquer agente de IA)
+# Pincel Sonoro Emocional — instruções universais (qualquer agente de IA)
 Este pacote contém um método de criação musical para Suno v5.5+ em `skill-core/`.
 Protocolo: (1) leia `skill-core/SKILL.md`; (2) escolha/mescle linhas criativas (perfis em `skill-core/profiles/`; mesclas em `skill-core/blends.md`; default: pincel-emocional; lentes vestíveis: tecelao, xama); (3) consulte `skill-core/references/` (metatags, multilíngue, styles, v5.5); (4) siga o fluxo de 7 passos do SKILL.md; (5) entregue Style + Exclude + Letra com metatags + configurações.
 Constantes: Custom Mode; Style ≤1000 chars com "sung in <idioma>"; Weirdness 30-45%; Style Influence 70-85%; mínimo 3 gerações antes de alterar o prompt; refrão curto com nome/marca repetido; ética do xama: pergunta plantada, nunca comando oculto; espelho honesto antes de compor.

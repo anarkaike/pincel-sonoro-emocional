@@ -1,4 +1,4 @@
-# Documentação do projeto Suno Maestro
+# Documentação do projeto Pincel Sonoro Emocional
 
 Leia estes arquivos quando precisar entender o PORQUÊ (o SKILL.md ensina o COMO):
 - `HISTORIA.md` — a jornada completa que gerou este método (do tarô ao multiplataforma).
