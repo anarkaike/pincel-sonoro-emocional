@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read", "Edit", "Write", "Glob", "Grep",
+      "Bash(git add:*)", "Bash(git commit:*)", "Bash(git status:*)", "Bash(git log:*)",
+      "Bash(mkdir:*)", "Bash(ls:*)", "Bash(cat:*)", "Bash(mv:*)", "Bash(cp:*)",
+      "Bash(./scripts/gerar_suno.sh:*)"
+    ],
+    "deny": ["Bash(git push:*)", "Bash(rm -rf:*)", "WebFetch", "Bash(curl:*)"]
+  }
+}

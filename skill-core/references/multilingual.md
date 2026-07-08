@@ -1,9 +1,6 @@
 # Guia multilíngue e séries internacionais
 
-## Qualidade por idioma (v5.5)
-- **Elite** (gerar 3-5 variações): inglês, espanhol, português, francês, japonês, coreano, mandarim*.
-- **Bons com ressalva** (gerar 5-8 variações e curar pronúncia): árabe, alemão, italiano e demais.
-- *Mandarim ainda tem arestas ocasionais de pronúncia — curadoria extra.
+Guia agnóstico de plataforma (chaves culturais, regras de composição). A qualidade por idioma é específica de cada provedor — para o Suno, ver `suno/idiomas.md`.
 
 ## Regras técnicas
 1. Letra 100% no idioma-alvo; tags em inglês.

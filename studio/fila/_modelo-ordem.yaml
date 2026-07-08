@@ -1,0 +1,13 @@
+id: "002-exemplo"            # unico; vira pasta em obras/
+tipo: cura                   # cura|homenagem|album|campanha|bgm|radio|outro
+status: pendente             # pendente|em_producao|aguardando_geracao_manual|aguardando_aprovacao|aprovada|publicada|rejeitada
+modo: ""                     # vazio = decidir pela governanca
+mescla: ""                   # vazio = Maestro escolhe (ex.: "Linha Cura")
+brief: >
+  Proposito, publico, chave emocional desejada, entregaveis.
+contexto_paths: []           # arquivos em obras/<id>/contexto/
+idioma: pt-BR
+variacoes: 5
+orcamento_creditos: 60
+programacao: ""              # cron opcional p/ recorrencia (ex.: "0 6 * * 1")
+publicar_em: []              # ex.: [soundon] — sempre exige aprovacao humana

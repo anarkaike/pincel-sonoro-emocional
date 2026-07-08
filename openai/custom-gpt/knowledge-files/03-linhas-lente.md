@@ -1,4 +1,3 @@
-___
 # Linha-lente: Tecelão (duplos e triplos sentidos, metáforas vivenciais)
 
 ## Alma
@@ -24,8 +23,6 @@ Polissemia da letra, subtexto, metáfora vivencial, assinatura invisível de mar
 
 ## O que trago numa mescla
 Sou lente, não condutor: passo depois da letra nascer e teço as camadas. A condutora decide O QUE dizer; eu decido QUANTOS fundos a porta terá.
-
-___
 # Linha-lente: Xamã (despertar de consciência, viradas de chave)
 
 ## Alma

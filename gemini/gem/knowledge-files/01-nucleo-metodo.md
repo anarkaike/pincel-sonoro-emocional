@@ -1,6 +1,6 @@
 ---
 name: pincel-sonoro-emocional
-description: Sistema modular de linhas criativas para gerar músicas de altíssima qualidade no Suno (v5.5+). Use SEMPRE que o usuário pedir para criar, compor, adaptar ou melhorar música, jingle, hino, trilha, música terapêutica, convite musical, álbum ou letra para IA de música — mesmo sem citar "Suno". Também para revisar prompts ruins (pronúncia, corte, refrão robótico), organizar linhas criativas, mesclar perfis criativos ou criar novas linhas.
+description: Sistema modular de linhas criativas para gerar músicas de altíssima qualidade com IA (plataforma atual - Suno v5.5+). Use SEMPRE que o usuário pedir para criar, compor, adaptar ou melhorar música, jingle, hino, trilha, música terapêutica, convite musical, álbum ou letra para IA de música — mesmo sem citar plataforma. Também para revisar prompts ruins (pronúncia, corte, refrão robótico), organizar linhas criativas, mesclar perfis criativos ou criar novas linhas.
 ---
 
 # Pincel Sonoro Emocional v2 — Linhas Criativas
@@ -37,13 +37,18 @@ Música aqui não nasce de prompt: nasce de uma **linha criativa** — uma filos
 - Exemplo: `Pincel Emocional + Cientista + Seta` → Pincel conduz letra e emoção; Cientista conduz o ciclo de variações e o registro; Seta poda o Style.
 - Mesclas nomeadas ficam salvas em `blends.md` (leia-o quando o usuário citar uma mescla pelo nome ou pedir sugestão de combinação).
 
-## Constantes técnicas (valem para TODAS as linhas)
+## Constantes do método (valem para TODAS as linhas, qualquer plataforma)
+
+- Mínimo 3 gerações antes de alterar o prompt; curadoria antes de edição.
+- Nome próprio/marca: linha curta repetida no refrão. Marca sutil: `[Whispered] Marca` no outro.
+- Referência agnóstica: `references/multilingual.md` (chaves culturais e adaptação por público).
+
+## Plataforma atual: Suno v5.5 (`references/suno/`)
 
 - Custom Mode sempre. Style ≤1000 chars (idioma declarado: `sung in...`), Lyrics ≤5000, Exclude no campo próprio.
 - Weirdness 30-45%, Style Influence 70-85% como ponto de partida (linhas podem ajustar).
-- Mínimo 3 gerações antes de alterar o prompt; curadoria antes de edição.
-- Nome próprio/marca: linha curta repetida no refrão. Marca sutil: `[Whispered] Marca` no outro.
-- Referências técnicas: `references/metatags.md` (tags + gramática avançada), `references/v55-features.md` (Voices, Custom Models, My Taste, sliders, editor), `references/multilingual.md` (idiomas e adaptação cultural), `references/style-library.md` (receitas prontas).
+- Detalhes: `suno/metatags.md` (tags + gramática avançada), `suno/v55-features.md` (Voices, Custom Models, My Taste, sliders, editor), `suno/style-library.md` (receitas prontas), `suno/idiomas.md` (qualidade por idioma).
+- **Outro provedor de música IA?** Crie `references/<provedor>/` com constantes + sintaxe dele — o método (linhas, mesclas, lentes) é agnóstico e não muda.
 
 ## Criando novas linhas
 

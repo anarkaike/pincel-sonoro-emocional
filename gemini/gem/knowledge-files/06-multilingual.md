@@ -1,9 +1,5 @@
 # Guia multilíngue e séries internacionais
 
-## Qualidade por idioma (v5.5)
-- **Elite** (gerar 3-5 variações): inglês, espanhol, português, francês, japonês, coreano, mandarim*.
-- **Bons com ressalva** (gerar 5-8 variações e curar pronúncia): árabe, alemão, italiano e demais.
-- *Mandarim ainda tem arestas ocasionais de pronúncia — curadoria extra.
 
 ## Regras técnicas
 1. Letra 100% no idioma-alvo; tags em inglês.
@@ -37,3 +33,9 @@ Cada versão nasce da chave emocional LOCAL + do gênero que move aquele públic
 - Elementos recorrentes entre faixas criam "família" (ex.: estrelas, a mesma montanha, a arte que viaja).
 - Capas: um template visual único com UMA variável cultural por faixa (sem bandeiras, sem caricatura).
 - Lançamento: cada faixa nos horários de pico do país-alvo; 2-3 micro-criadores locais usando o som valem mais que impulsionamento.
+# Suno — qualidade por idioma (v5.5)
+
+- **Elite** (gerar 3-5 variações): inglês, espanhol, português, francês, japonês, coreano, mandarim*.
+- **Bons com ressalva** (gerar 5-8 variações e curar pronúncia): árabe, alemão, italiano e demais.
+- *Mandarim ainda tem arestas ocasionais de pronúncia — curadoria extra.
+

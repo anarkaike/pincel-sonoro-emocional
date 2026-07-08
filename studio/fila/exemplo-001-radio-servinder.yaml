@@ -1,0 +1,14 @@
+id: "001-radio-servinder-faixa"
+tipo: radio
+status: pendente
+modo: ""
+mescla: "Linha Fábrica"
+brief: >
+  Faixa instrumental para a Radio Servinder das lojas parceiras de Sao Thome das Letras:
+  viola caipira + texturas etereas, 3-4 min, acolhedora, sem vocais, que nao canse em loop.
+contexto_paths: []
+idioma: pt-BR
+variacoes: 4
+orcamento_creditos: 40
+programacao: "0 6 * * *"
+publicar_em: []

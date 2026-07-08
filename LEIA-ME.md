@@ -17,8 +17,13 @@
 | Qualquer outro agente | AGENTS.md universal | `universal/` |
 
 Regra dos adaptadores de repositório: sempre copie TAMBÉM a pasta `skill-core/` para a raiz do projeto — os adaptadores apontam para ela.
-Nota honesta: a experiência completa (subagentes, comandos, memória do Suno Studio) é exclusiva do Claude Code; nas demais plataformas a skill opera como método + base de conhecimento.
-Manutenção: edite apenas `skill-core/`; os adaptadores raramente mudam.
+Nota honesta: a experiência completa (subagentes, comandos, memória do Estúdio) é exclusiva do Claude Code; nas demais plataformas a skill opera como método + base de conhecimento.
+Manutenção: edite apenas `skill-core/`; depois rode `scripts/exportar.sh refresh` para regenerar os artefatos derivados (`.skill` + knowledge-files 01-08 do Gem/Custom GPT — o 09 é curadoria manual). `scripts/exportar.sh <alvo> [destino]` monta pacote para qualquer plataforma.
+
+**Estrutura agnóstica de plataforma (ADR-11):** o método (linhas, mesclas, lentes, `references/multilingual.md`) não depende do gerador. O conhecimento específico do Suno vive em `references/suno/`; outro provedor (Udio, ElevenLabs Music...) = nova pasta `references/<provedor>/`, método intocado.
+
+## `studio/` — Estúdio Pincel Sonoro (a "gravadora de agentes")
+Workspace operacional que USA a skill: agentes (Maestro, Letrista-Pincel, Cronista-Cientista), fila de ordens YAML (`fila/`), governança (`governanca.yaml`: modos por_faixa/por_lote/por_excecao, linhas vermelhas, portões inalienáveis), execução via cron, Ralph loop e GitHub Actions. Consome a skill por **symlink relativo** (`studio/.claude/skills/pincel-sonoro-emocional → ../../../skill-core`) — sem cópia, sem drift (ADR-12). Operar: `claude` dentro de `studio/` → `/produzir fila/<ordem>.yaml`.
 
 ## Instalação viva neste Mac (symlinks — editar aqui = skill em uso atualizada)
 Este repo é a fonte da verdade; as instalações locais são symlinks para `skill-core/`:

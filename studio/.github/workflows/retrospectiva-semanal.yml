@@ -1,0 +1,23 @@
+name: Retrospectiva semanal (proposta)
+on:
+  schedule: [{ cron: "0 12 * * 5" }]
+  workflow_dispatch: {}
+permissions: { contents: write, issues: write }
+jobs:
+  retro:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Papel: cronista-cientista. Gere APENAS a proposta de retrospectiva
+            (memoria/*/retrospectivas/<data>-PROPOSTA.md) com ate 5 aprendizados
+            por linha. NAO altere aprendizados.md (sancao humana ocorre via /retro).
+      - run: |
+          git config user.name "studio-bot"; git config user.email "bot@studio"
+          git add -A && git diff --cached --quiet || git commit -m "studio: proposta de retrospectiva"
+          git push
+          gh issue create -t "Retrospectiva pronta para sancao" -b "Revise memoria/*/retrospectivas e rode /retro" || true
+        env: { GH_TOKEN: ${{ github.token }} }

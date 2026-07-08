@@ -1,0 +1,32 @@
+name: Producao agendada
+on:
+  schedule:
+    - cron: "0 9 * * *"      # 06:00 America/Sao_Paulo
+  workflow_dispatch: {}
+concurrency: { group: studio, cancel-in-progress: false }
+permissions: { contents: write, issues: write }
+jobs:
+  produzir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rodar uma iteracao do estudio
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Siga scripts/PROMPT.md deste repositorio.
+          claude_args: "--max-turns 60"
+        env:
+          SUNO_API_URL: ${{ secrets.SUNO_API_URL }}
+          SUNO_API_KEY: ${{ secrets.SUNO_API_KEY }}
+      - name: Commitar resultados
+        run: |
+          git config user.name "studio-bot"; git config user.email "bot@studio"
+          git add -A && git diff --cached --quiet || git commit -m "studio: iteracao agendada"
+          git push
+      - name: Notificar aprovacoes pendentes
+        run: |
+          P=$(ls aprovacoes/pendentes 2>/dev/null | head -1 || true)
+          if [ -n "$P" ]; then gh issue create -t "Aprovacao pendente: $P" -b "Veja aprovacoes/pendentes/$P e rode /aprovar $P" || true; fi
+        env: { GH_TOKEN: ${{ github.token }} }

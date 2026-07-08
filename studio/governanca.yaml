@@ -1,0 +1,25 @@
+# Governança do estúdio — editável em português
+modo_padrao: por_faixa            # por_faixa | por_lote | por_excecao
+modos_por_tipo:
+  cura: por_faixa
+  homenagem: por_faixa
+  album: por_lote
+  campanha: por_lote
+  bgm: por_excecao
+  radio: por_excecao
+perguntar_quando_tipo_novo: true   # Maestro pergunta e oferece salvar aqui
+
+linhas_vermelhas:                  # param tudo, em qualquer modo
+  - voz_imagem_ou_historia_de_pessoa_real_sem_consentimento_registrado
+  - conteudo_sensivel_ou_marca_de_terceiros
+  - custo_acima_do_orcamento_da_ordem
+  - primeira_publicacao_em_plataforma_externa
+
+gatilhos_de_excecao:               # no modo por_excecao, chamam o humano
+  geracoes_sem_aprovacao: 6
+  falhas_de_pronuncia_seguidas: 3
+  desvio_do_brief_detectado: true
+
+portoes_inalienaveis:              # nunca automatizar
+  - veredito_emocional_na_curadoria_final
+  - sancao_de_aprendizado_permanente
