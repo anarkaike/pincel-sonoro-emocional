@@ -20,5 +20,13 @@ Regra dos adaptadores de repositório: sempre copie TAMBÉM a pasta `skill-core/
 Nota honesta: a experiência completa (subagentes, comandos, memória do Suno Studio) é exclusiva do Claude Code; nas demais plataformas a skill opera como método + base de conhecimento.
 Manutenção: edite apenas `skill-core/`; os adaptadores raramente mudam.
 
+## Instalação viva neste Mac (symlinks — editar aqui = skill em uso atualizada)
+Este repo é a fonte da verdade; as instalações locais são symlinks para `skill-core/`:
+- App Claude (agent mode): `~/Library/Application Support/Claude/local-agent-mode-sessions/skills-plugin/92ba84f0-…/bf594650-…/skills/suno-maestro`
+- Claude Code CLI: `~/.claude/skills/suno-maestro`
+
+Se o app Claude recriar o diretório numa atualização (quebrando o symlink), basta refazê-lo
+apontando para `skill-core/` — todo o conteúdo vive neste repo git.
+
 ## Contexto para agentes (leitura recomendada antes de operar)
 Todo o PORQUÊ do projeto vive em `skill-core/docs/`: **HISTORIA.md** (a jornada que gerou o método — do tarô às lentes), **NEGOCIO.md** (Servinder Artes: missão, modelo, estratégia, princípios), **GLOSSARIO.md** (vocabulário próprio), **ARQUITETURA.md** (decisões de design em mini-ADRs) e **PRIVACIDADE.md** (o que deliberadamente não está aqui e as regras ao lidar com dados de pessoas). Agentes que forem propor mudanças devem ler ARQUITETURA.md primeiro; agentes que forem compor devem honrar PRIVACIDADE.md sempre.
