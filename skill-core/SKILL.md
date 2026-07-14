@@ -48,6 +48,7 @@ Música aqui não nasce de prompt: nasce de uma **linha criativa** — uma filos
 - Custom Mode sempre. Style ≤1000 chars (idioma declarado: `sung in...`), Lyrics ≤5000, Exclude no campo próprio.
 - Weirdness 30-45%, Style Influence 70-85% como ponto de partida (linhas podem ajustar).
 - Detalhes: `suno/metatags.md` (tags + gramática avançada), `suno/v55-features.md` (Voices, Custom Models, My Taste, sliders, editor), `suno/style-library.md` (receitas prontas), `suno/idiomas.md` (qualidade por idioma).
+- **Gerar via API (programático):** `suno/api-generation.md` + `suno/suno_generate.py` — endpoints, gotcha do **Cloudflare-UA** (403/1010 sem User-Agent), status via `record-info` (não `query`), persona/voz custom (`personaId`+`personaModel`), polling + download.
 - **Outro provedor de música IA?** Crie `references/<provedor>/` com constantes + sintaxe dele — o método (linhas, mesclas, lentes) é agnóstico e não muda.
 
 ## Contexto do projeto (o porquê)
