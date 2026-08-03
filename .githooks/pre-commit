@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+# Trunk-based enforcement — política do workspace IA_Central (2026-08-03).
+# Commits vão DIRETO na branch padrão (main/master): sem branch de feature/entrega.
+# HEAD destacado (rebase/merge em andamento) não é atrapalhado.
+# Override consciente: TRUNK_HOOK_SKIP=1 git commit ...
+[ "${TRUNK_HOOK_SKIP:-0}" = "1" ] && exit 0
+
+current=$(git symbolic-ref --quiet --short HEAD 2>/dev/null) || exit 0
+
+default=$(git symbolic-ref --quiet --short refs/remotes/origin/HEAD 2>/dev/null | sed 's:^origin/::')
+if [ -z "$default" ]; then
+  if   git show-ref --verify --quiet refs/heads/main;   then default=main
+  elif git show-ref --verify --quiet refs/heads/master; then default=master
+  else default="$current"; fi
+fi
+
+if [ "$current" != "$default" ]; then
+  echo "✋ trunk-based: commite direto em '$default' (você está em '$current')." >&2
+  echo "   Política: IA_Central/CLAUDE.md → Fluxo Git. Override consciente: TRUNK_HOOK_SKIP=1" >&2
+  exit 1
+fi
+exit 0
